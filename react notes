@@ -1,0 +1,54 @@
+const element = <h1>Hello, world!</h1>;
+This funny tag syntax is neither a string nor HTML.
+It is called JSX
+JSX may remind you of a template language, but it comes with the full power of JavaScript.
+
+
+
+when you run npm start command index.hmtl file serve
+index.html contain the root dom
+next control enter index.js
+REact dom render the root dom element
+
+
+JSX
+Js xml (JavaScript extension)
+ Clean and elegent
+ use transpilers
+ in jsx we don't need to export React
+
+
+Componet Types
+1- stateful class c (contains render method which return html)
+2- stateless functional c (method return html)
+
+
+ Component  name should be Pascal case
+ every component you create must must import from react
+ import React,{Component} from 'react'
+
+
+ IN class c we can manage state but in react new we can manage state with hooks
+ class component provide lifecyle hooks
+
+rendering
+
+ function tick() {
+  const element = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  root.render(element);
+}
+same as above 
+
+function tick() {
+  return  (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  )
+}
